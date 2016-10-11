@@ -1,8 +1,8 @@
 class Tenant
-  attr_accessor :name,:age,:sex
-  def initialize (name,age,sex)
+  attr_accessor :name,:age,:gender
+  def initialize (name,age,gender)
     @name  = name
     @age = age
-    @sex = sex
+    @gender = gender
   end
 end

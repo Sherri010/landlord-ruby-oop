@@ -25,12 +25,17 @@ class Apartment
   end
 
   def add_tenant(ten)
-    @tanents << ten
+    if(@tanents.length+1 > @bed)
+      p "full cap"
+     else
+       @tanents << ten
+     end
   end
 
   def renters
   @tanents
   end
+
 end
 
 
